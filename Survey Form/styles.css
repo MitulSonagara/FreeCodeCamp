@@ -72,6 +72,14 @@ button {
     .container {
         max-width: 540px;
     }
+
+    body {
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 1.4;
+        letter-spacing: 1.4px;
+    }
+
 }
 
 @media (min-width: 800px) {
@@ -80,33 +88,34 @@ button {
     }
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.heading{
+.heading {
     margin-bottom: 2rem;
     padding: 0 2rem;
 }
 
-form{
+form {
     background-color: #06283dd0;
     border-radius: 2rem;
     padding: 3rem;
 }
 
-@media (max-width: 560px){
-    form{
+@media (max-width: 560px) {
+    form {
         padding: 2rem;
     }
 }
 
-.form-input{
+.form-input {
     margin: 0 auto 1.5rem auto;
     padding: 0.1rem;
 }
 
-.input-field,.text{
+.input-field,
+.text {
     width: 100%;
     padding: 0.5rem;
     height: 3rem;
@@ -116,22 +125,24 @@ form{
     background-clip: padding-box;
     border: 2px solid #06283D;
     border-radius: 0.5rem;
-    transition: border-color 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.input-field:focus,.text:focus{
+.input-field:focus,
+.text:focus {
     border-color: #256D85;
     outline: 5px;
     box-shadow: 0 0.2rem 0.4rem #3088a5;
 }
 
-.radio,.checkbox{
+.radio,
+.checkbox {
     margin: 0 .5rem 0 1rem;
     min-height: 1rem;
     min-width: 1rem;
 }
 
-.text{
+.text {
     min-height: 130px;
     resize: vertical;
 }
@@ -145,4 +156,4 @@ form{
     color: inherit;
     border-radius: 2px;
     cursor: pointer;
-  }
+}
