@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #06283D;
+    background-image: linear-gradient(#06283d46, #256d8566, #06283d46), url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    font-size: 1.3rem;
+}
+
+label {
+    display: flex;
+    font-size: 1.3rem;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+}
+
+input,
+button,
+select,
+textarea,
+option {
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    width: 100%;
+    margin: 4rem auto;
+}
+
+@media (min-width: 570px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 725px;
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+
+.heading{
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+form{
+    background-color: #06283dd0;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+@media (max-width: 560px){
+    form{
+        padding: 2rem;
+    }
+}
+
+.form-input{
+    margin: 0 auto 1.5rem auto;
+    padding: 0.1rem;
+}
+
+.input-field,.text{
+    width: 100%;
+    padding: 0.5rem;
+    height: 3rem;
+    color: #26292d;
+    font-weight: 500;
+    background-color: #e4f5fcef;
+    background-clip: padding-box;
+    border: 2px solid #06283D;
+    border-radius: 0.5rem;
+    transition: border-color 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+.input-field:focus,.text:focus{
+    border-color: #256D85;
+    outline: 5px;
+    box-shadow: 0 0.2rem 0.4rem #3088a5;
+}
+
+.radio,.checkbox{
+    margin: 0 .5rem 0 1rem;
+    min-height: 1rem;
+    min-width: 1rem;
+}
+
+.text{
+    min-height: 130px;
+    resize: vertical;
+}
+
+.submit {
+    font-size: 1.7rem;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background: #1f9741;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+  }
