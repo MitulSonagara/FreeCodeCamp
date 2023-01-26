@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background-color: #395B64;
+    color: #E7F6F2;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #2C3333;
+    min-width: 300px;
+    width: 320px;
+    height: 100%;
+    border-right: 2px solid #232931;
+    box-shadow: 2px 2px 5px black;
+    z-index: 1;
+}
+
+#navbar .icon{
+    display: none;
+}
+
+nav header {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px;
+}
+
+#navbar .sidenav {
+    height: 90%;
+    overflow: auto;
+    padding: 0;
+    background-color: #2C3333;
+
+}
+
+#navbar li {
+    color: #A5C9CA;
+    width: 100%;
+    list-style: none;
+    border-top: 2px solid #232931;
+}
+
+#navbar li:hover,#navbar a:hover{
+    background-color: #A5C9CA;
+    color: #232931;
+}
+
+#navbar a {
+    display: block;
+    text-decoration: none;
+    color: #A5C9CA;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+
+#main-doc header {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+    color: #1f2222;
+    font-weight: 900;
+    text-shadow: 1px 1px;
+}
+
+#main-doc {
+    margin: 10px;
+    position: absolute;
+    left: 340px;
+
+}
+
+section article {
+    margin: 15px;
+    font-size: 1.2rem;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+code {
+    display: block;
+    word-break: normal;
+    white-space: pre-line;
+    word-wrap: normal;
+    line-height: 2.1;
+    background-color: #33454a;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 865px) {
+    #navbar{
+        position: fixed;
+        top: 0;
+        height: auto;
+        width: 100%;
+        border-left: none;
+        border-bottom: 2px solid #232931;
+    }
+    nav header{
+        display: inline-block;
+    }
+    #navbar .icon{
+        display: inline-block;
+    }
+    #navbar .sidenav{
+        display: none;
+        height: 90%;
+        overflow: auto;
+        padding: 0;
+        background-color: #2C3333;
+    }
+    #navbar .sidenav.res{
+        display: block;
+        position: relative;
+    }
+    #main-doc {
+        margin: 10px;
+        position: absolute;
+        left: 10px;
+        top: 70px;
+    }
+    
+}
