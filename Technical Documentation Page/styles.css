@@ -25,7 +25,7 @@ body {
     z-index: 1;
 }
 
-#navbar .icon{
+#navbar .icon {
     display: none;
 }
 
@@ -52,7 +52,8 @@ nav header {
     border-top: 2px solid #232931;
 }
 
-#navbar li:hover,#navbar a:hover{
+#navbar li:hover,
+#navbar a:hover {
     background-color: #A5C9CA;
     color: #232931;
 }
@@ -104,7 +105,7 @@ code {
 }
 
 @media screen and (max-width: 865px) {
-    #navbar{
+    #navbar {
         position: fixed;
         top: 0;
         height: auto;
@@ -112,28 +113,33 @@ code {
         border-left: none;
         border-bottom: 2px solid #232931;
     }
-    nav header{
+
+    nav header {
         display: inline-block;
     }
-    #navbar .icon{
+
+    #navbar .icon {
         display: inline-block;
     }
-    #navbar .sidenav{
+
+    #navbar .sidenav {
         display: none;
         height: 90%;
         overflow: auto;
         padding: 0;
         background-color: #2C3333;
     }
-    #navbar .sidenav.res{
+
+    #navbar .sidenav.res {
         display: block;
         position: relative;
     }
+
     #main-doc {
         margin: 10px;
         position: absolute;
         left: 10px;
         top: 70px;
     }
-    
+
 }
