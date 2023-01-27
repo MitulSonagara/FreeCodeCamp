@@ -102,6 +102,7 @@ nav header {
     margin: 10px;
     position: absolute;
     left: 340px;
+    z-index: -1;
 
 }
 
