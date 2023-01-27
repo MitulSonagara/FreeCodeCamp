@@ -12,23 +12,47 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
-#navbar {
+.topbar-container {
+    z-index: 1;
+}
+
+.topbar {
     position: fixed;
-    left: 0;
-    top: 0;
+    width: 100%;
+    top: -3.8rem;
     background-color: #2C3333;
-    min-width: 300px;
+    height: 3.8rem;
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.9rem;
+    box-shadow: 2px 2px 5px black;
+    transition: top 1s ease;
+}
+
+.hamburger {
+    position: absolute;
+    top: 0.9rem;
+    right: 0.9rem;
+    cursor: pointer;
+    color: #E7F6F2;
+}
+
+.sidebar{
+    height: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left:-320pxpx;
     width: 320px;
-    height: 100%;
+    transition: left 0.5s ease;
+    background-color: #2C3333;
+    min-width: 320px;
     border-right: 2px solid #232931;
     box-shadow: 2px 2px 5px black;
     z-index: 1;
 }
-
-#navbar .icon {
-    display: none;
-}
-
 nav header {
     display: block;
     font-size: 2rem;
@@ -37,12 +61,11 @@ nav header {
     margin: 15px;
 }
 
-#navbar .sidenav {
+.sidebar #navbar .sidenav {
     height: 90%;
     overflow: auto;
     padding: 0;
     background-color: #2C3333;
-
 }
 
 #navbar li {
@@ -52,20 +75,19 @@ nav header {
     border-top: 2px solid #232931;
 }
 
-#navbar li:hover,
-#navbar a:hover {
-    background-color: #A5C9CA;
-    color: #232931;
-}
-
 #navbar a {
     display: block;
     text-decoration: none;
     color: #A5C9CA;
     padding: 10px 30px;
     cursor: pointer;
-}
+} 
 
+#navbar li:hover,
+#navbar a:hover {
+    background-color: #A5C9CA;
+    color: #232931;
+}
 
 #main-doc header {
     font-size: 2rem;
@@ -105,7 +127,30 @@ code {
 }
 
 @media screen and (max-width: 865px) {
-    #navbar {
+
+    .topbar{
+        top:0;
+    }
+    .hamburger{
+        display: block;
+    }
+
+    .sidebar{
+        left:-320px;
+    }
+
+    .sidebar.visible{
+        left:0;
+    }
+
+    #main-doc {
+        margin: 10px;
+        position: absolute;
+        left: 10px;
+        top: 70px;
+    } 
+
+    /* #navbar {
         position: fixed;
         top: 0;
         height: auto;
@@ -140,6 +185,16 @@ code {
         position: absolute;
         left: 10px;
         top: 70px;
+    } */
+
+}
+
+@media screen and (min-width: 866px){
+    .topbar-container{
+        display: none;
     }
 
+    .sidebar{
+        left: 0;
+    }
 }
