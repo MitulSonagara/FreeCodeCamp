@@ -40,23 +40,8 @@ a {
     flex-direction: row;
 }
 
-@media (max-width:650px) {
-    .grid {
-        flex-direction: column;
-    }
-}
-
 .logo {
     width: 60vw;
-}
-
-
-@media (max-width: 650px) {
-    .logo {
-        margin-top: 15px;
-        width: 100%;
-        position: relative;
-    }
 }
 
 .logo>img {
@@ -70,30 +55,8 @@ a {
     margin-left: 20px;
 }
 
-@media (max-width:650px) {
-    .logo>img {
-        margin: auto;
-    }
-}
-
 nav {
     font-weight: 500;
-}
-
-@media (max-width: 650px) {
-    nav {
-        margin-top: 10px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0 50px;
-    }
-
-    nav li {
-        padding-bottom: 5px;
-    }
 }
 
 nav>ul {
@@ -101,12 +64,6 @@ nav>ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-@media screen and (max-width:650px) {
-    nav>ul {
-        flex-direction: column;
-    }
 }
 
 header {
@@ -118,12 +75,6 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: #efefef
-}
-
-@media (max-width: 650px) {
-    header {
-        flex-wrap: wrap;
-    }
 }
 
 #hero {
@@ -162,12 +113,6 @@ header {
     transition: background-color 1s;
 }
 
-@media (max-width: 650px) {
-    #hero {
-        margin-top: 120px;
-    }
-}
-
 #Features {
     margin-top: 30px;
 }
@@ -190,22 +135,6 @@ header {
     padding: 5px;
 }
 
-@media (max-width: 650px) {
-    #Features .icon {
-        height: fit-content;
-        width: fit-content;
-        text-align: center;
-        justify-content: center;
-        margin: auto;
-    }
-
-    #Features .desc {
-        width: 100%;
-        text-align: center;
-        padding-bottom: 30px;
-        height: fit-content;
-    }
-}
 
 #How-it-works {
     margin-top: 50px;
@@ -270,23 +199,82 @@ iframe {
     transition: background-color 1s;
 }
 
-@media (max-width: 800px) {
-    #Pricing {
-      flex-direction: column;
-    }
-    .product {
-      max-width: 300px;
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 10px;
-    }
-}
 
-footer{
+footer {
     height: 70px;
     text-align: center;
     justify-content: center;
     padding-top: 20px;
     color: gray;
     background-color: #ddd;
+}
+
+@media (max-width: 650px) {
+    #Features .icon {
+        height: fit-content;
+        width: fit-content;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #Features .desc {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+        height: fit-content;
+    }
+
+    #hero {
+        margin-top: 120px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav>ul {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    nav li {
+        padding-bottom: 5px;
+    }
+
+    .logo>img {
+        margin: auto;
+    }
+
+    .logo {
+        margin-top: 15px;
+        width: 100%;
+        position: relative;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    #Pricing {
+        flex-direction: column;
+    }
+
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
 }
